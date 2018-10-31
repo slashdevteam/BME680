@@ -46,6 +46,11 @@ public:
 
     float getGasResistance();
 
+    bme680_field_data getData() const
+    {
+        return data;
+    }
+
 private:
     bool _filterEnabled, _tempEnabled, _humEnabled, _presEnabled, _gasEnabled;
     int32_t _sensorID;
